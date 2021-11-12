@@ -237,3 +237,13 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1636700142662	geckodriver	INFO	Listening on 127.0.0.1:51934
+1636700145756	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51935" "-no-remote" "-profile" "C:\\Users\\MAARTE~1\\AppData\\Local\\Temp\\rust_mozprofileZ7FbY9"
+1636700146158	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Maarten Wolfsen\\AppData\\Local\\Temp\\rust_mozprofileZ7FbY9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51935/devtools/browser/4208ff09-897e-4f85-959a-a8753ea743f7
+1636700148129	Marionette	INFO	Listening on port 51940
+1636700148424	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.mediamarktlabs.nl/assets/js/1c7d474ec23ee06b576e145f1e17099f.js, line 1: ReferenceError: service is not defined
+1636700172923	Marionette	INFO	Stopped listening on port 51940
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
