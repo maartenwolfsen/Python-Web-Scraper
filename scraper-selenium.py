@@ -2,18 +2,17 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-import time
 
 driver = webdriver.Firefox(executable_path=r'.\res\geckodriver.exe')
 driver.get('https://www.mediamarkt.nl/nl/product/_legend-of-zelda-link-s-awakening-nintendo-switch-1623975.html')
 
-time.sleep(3)
+WebDriverWait(driver, 3)
 
 cookiePopup = driver.find_elements_by_css_selector('button.gdpr-cookie-layer__btn')
 
 if (len(cookiePopup) > 0):
     cookiePopup[0].click()
-    time.sleep(1)
+    WebDriverWait(driver, 1)
 
 productPrice = driver.find_elements_by_xpath('//meta[@itemprop="price"]')[0].get_attribute("content")
 
